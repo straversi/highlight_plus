@@ -25,6 +25,6 @@ pre {
 }
 ```
 
-creates...
+with [pygments](https://jekyllrb.com/docs/templates/#code-snippet-highlighting) creates...
 
 ![highlight sample](./sample.png)
