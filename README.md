@@ -27,4 +27,4 @@ pre {
 
 creates...
 
-![highlight sample](./highlight_sample.png)
+![highlight sample](./sample.png)
