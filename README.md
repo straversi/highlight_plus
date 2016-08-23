@@ -1,5 +1,5 @@
 # highlight_plus
-A better syntax highlighter tag for Jekyll.
+An extension of the highlight tag in Jekyll.
 
 There is one feature: language names get added to the top of the code blocks.
 
