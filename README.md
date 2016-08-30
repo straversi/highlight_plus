@@ -18,7 +18,7 @@ Add `highlight_plus.rb` to the `_plugins` folder in your Jekyll project.
     font-family: 'Courier', monospace;
     color: #2a7ae2;
 }
-pre {
+.highlight pre {
   border: 1px solid #cfcfcf;
   border-radius: 0px 0px 3px 3px;
   background-color: #f7f7f7;
@@ -28,3 +28,13 @@ pre {
 with [pygments](https://jekyllrb.com/docs/templates/#code-snippet-highlighting) creates...
 
 ![highlight sample](./sample.png)
+
+You can also add an extra `filename` parameter to replace the language name with whatever you'd like.
+
+```liquid
+{% highlight python filename=test.py %}
+class Test:
+    def __init__(self, x):
+        pass
+{% endhighlight %}
+```
