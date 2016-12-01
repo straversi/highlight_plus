@@ -1,3 +1,5 @@
+![highlight sample](./sample_language.png)
+
 # highlight_plus
 An extension of the highlight tag in Jekyll.
 
@@ -27,7 +29,7 @@ Add `highlight_plus.rb` to the `_plugins` folder in your Jekyll project.
 
 with [pygments](https://jekyllrb.com/docs/templates/#code-snippet-highlighting) creates...
 
-![highlight sample](./sample.png)
+![highlight sample](./sample_language.png)
 
 You can also add an extra `filename` parameter to replace the language name with whatever you'd like.
 
@@ -37,4 +39,12 @@ class Test:
     def __init__(self, x):
         pass
 {% endhighlight %}
+```
+
+![highlight sample](./sample_filename.png)
+
+To disable the caption completely, include the parameter `nolabel`.
+
+```liquid
+{% highlight python nolabel %}
 ```
