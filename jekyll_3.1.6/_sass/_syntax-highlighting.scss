@@ -9,6 +9,22 @@
       background: #eef;
     }
 
+    pre {
+      border: 1px solid #cfcfcf;
+      border-radius: 0px 0px 3px 3px;
+      background-color: #f7f7f7;
+    }
+
+    /* highlight_plus */
+    figcaption {
+      padding: 2px 2px 2px 12px;
+      border: 1px solid #cfcfcf;
+      border-bottom: none;
+      border-radius: 3px 3px 0px 0px;
+      font-family: 'Courier', monospace;
+      color: #2a7ae2;
+    }
+
     .c     { color: #998; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error
     .k     { font-weight: bold } // Keyword
