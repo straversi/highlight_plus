@@ -49,8 +49,13 @@ eos
           "class=\"language-#{@lang.to_s.tr("+", "-")}\"",
           "data-lang=\"#{@lang}\""
         ].join(" ")
-        figcaption = @highlight_options.key?(:filename) ? @highlight_options[:filename] : @lang
-        "<figure class=\"highlight\"><figcaption>#{figcaption}</figcaption>"\
+        if @highlight_options.key?(:nolabel)
+          figcaption = ""
+        else
+          caption_text = @highlight_options.key?(:filename) ? @highlight_options[:filename] : @lang
+          figcaption = "<figcaption>#{caption_text}</figcaption>"
+        end
+        "<figure class=\"highlight\">#{figcaption}"\
         "<pre><code #{code_attributes}>"\
         "#{code.chomp}</code></pre></figure>"
       end
